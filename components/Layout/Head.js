@@ -17,9 +17,6 @@ export default () => {
         body {
           background: white;
         }
-        a {
-          color: white;
-        }
       `}</style>
     </div>
   );
