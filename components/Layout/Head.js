@@ -11,7 +11,7 @@ export default () => {
           href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css"
         />
         <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet"/>
-        <title> React Storefront </title>
+        <title> Storefront </title>
       </Head>
       <style jsx global>{`
         body {
