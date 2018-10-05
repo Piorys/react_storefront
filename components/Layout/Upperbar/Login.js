@@ -6,7 +6,7 @@ class Login extends Component {
   render(){
     return(
       <Menu.Item link>
-        <Button primary position="right">
+        <Button color="facebook" position="right">
           Login
         </Button>
       </Menu.Item>

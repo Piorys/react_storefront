@@ -6,7 +6,7 @@ class Register extends Component {
   render(){
     return(
       <Menu.Item link position="right">
-        <Button>
+        <Button color="facebook" >
           Register
         </Button>
       </Menu.Item>

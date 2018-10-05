@@ -7,7 +7,7 @@ class Minicart extends Component {
 render(){
   return(
     <Menu.Item link>
-      <Button animated="fade">
+      <Button animated="fade" color="facebook" >
         <Button.Content visible>
           <Icon name="shopping cart"/>
         </Button.Content>

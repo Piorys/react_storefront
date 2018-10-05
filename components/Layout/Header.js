@@ -10,7 +10,7 @@ export default () => {
       dividing
       style={{ fontFamily: "Kaushan Script" }}
     >
-      Storefront
+      Store <span style={{color:"#3b5998"}}> front</span>
     </Header>
   );
 };
