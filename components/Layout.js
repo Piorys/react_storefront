@@ -7,8 +7,11 @@ export default props => {
   return (
     <Container>
       <Head />
+      <h1 style={{color:"white"}}> Storefront </h1>
       <Upperbar />
+
       {props.children}
+
     </Container>
   );
 };

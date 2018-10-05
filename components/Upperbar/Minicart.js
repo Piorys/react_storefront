@@ -1,12 +1,23 @@
-import React from "react";
-import { Menu } from "semantic-ui-react";
+import React, {Component} from "react";
+import { Menu,Icon,Button } from "semantic-ui-react";
 
-export default props => {
-  return (
-    <Menu style={{
-      marginTop: "20px"
-    }}>
-      <a className="item"> Cart </a>
-    </Menu>
+
+class Minicart extends Component {
+
+render(){
+  return(
+    <Menu.Item link>
+      <Button animated="fade">
+        <Button.Content visible>
+          <Icon name="shopping cart"/>
+        </Button.Content>
+        <Button.Content hidden>
+          Cart
+        </Button.Content>
+
+      </Button>
+    </Menu.Item>
   );
-};
+}}
+
+export default Minicart;
