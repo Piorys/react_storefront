@@ -10,11 +10,12 @@ export default () => {
           rel="stylesheet"
           href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css"
         />
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet"/>
         <title> React Storefront </title>
       </Head>
       <style jsx global>{`
         body {
-          background: #3e4c62;
+          background: white;
         }
         a {
           color: white;

@@ -1,10 +1,10 @@
 import React from "react";
 import { Menu, Icon } from "semantic-ui-react";
 //components
-import Login from "./Upperbar/Login.js";
-import Minicart from "./Upperbar/Minicart.js";
-import Register from "./Upperbar/Register.js";
-import Wishlist from "./Upperbar/Wishlist.js";
+import Login from "./Login.js";
+import Minicart from "./Minicart.js";
+import Register from "./Register.js";
+import Wishlist from "./Wishlist.js";
 
 export default () => {
   return (

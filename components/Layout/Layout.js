@@ -1,13 +1,14 @@
 import React from "react";
 import {Container} from "semantic-ui-react";
 import Head from "./Head";
-import Upperbar from '../components/Upperbar.js';
+import Header from "./Header.js";
+import Upperbar from './Upperbar/Upperbar.js';
 
 export default props => {
   return (
     <Container>
       <Head />
-      <h1 style={{color:"white"}}> Storefront </h1>
+      <Header/>
       <Upperbar />
 
       {props.children}
