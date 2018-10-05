@@ -2,11 +2,16 @@
 import React, { Component } from "react";
 
 //Component Import
-import Layout from '../components/Layout.js';
+import Layout from '../components/Layout//Layout.js';
 
 class Index extends Component {
   render() {
-    return <Layout/>
+    return(
+      <Layout>
+
+      </Layout>
+    )
+
   }
 }
 
