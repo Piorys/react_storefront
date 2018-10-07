@@ -1,35 +1,20 @@
 //Dependencies Import
 import React, { Component } from "react";
-import {Card} from "semantic-ui-react";
+import { Card } from "semantic-ui-react";
 //Component Import
 import ProductCardMainPage from "./ProductCardMainPage.js";
 
-//TODO: Create rules for currency
+//Module Import
+import RandomProduct from "../../data/RandomProducts.js";
+//TODO: Create rules for currenc
 
 class Products extends Component {
+
   constructor() {
     super();
+    const random = new RandomProduct();
     this.state = {
-      products: [
-        {
-          id: 1,
-          name: "Sneakers Blue",
-          price: "250",
-          currency: "PLN",
-          imageurl:
-            "https://assets.adidas.com/images/w_600,f_auto,q_auto/bce885afc7174ffc81cca80901384cb1_9366/Campus_Shoes_Blue_BZ0086_01_standard.jpg",
-          description: "The last sneakers You'll ever wear"
-        },
-        {
-          id: 2,
-          name: "Sneakers Red",
-          price: "248",
-          currency: "PLN",
-          imageurl:
-            "https://assets.adidas.com/images/w_600,f_auto,q_auto/e114b2f0b8cd48259f20a83500fe9541_9366/Campus_Shoes_Red_DB0984_01_standard.jpg",
-          description: "The last sneakers You'll ever wear"
-        }
-      ]
+      products: random.getRandomProductsMainPage(9,"EUR")
     };
   }
 
