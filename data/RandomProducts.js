@@ -23,42 +23,13 @@ module.exports = class RandomProduct {
         name: faker.commerce.product(),
         price: faker.commerce.price(),
         currency: currency,
-        imageurl: "https://image.ceneostatic.pl/data/products/57343441/i-adidas-campus-shoes-grey.jpg",
+        imageurl:
+          "https://image.ceneostatic.pl/data/products/57343441/i-adidas-campus-shoes-grey.jpg",
         description: faker.lorem.sentence()
       };
       products.push(randomProduct);
     }
 
     return products;
-  }
-  /*
-  Scope: Gets random product picture from picsum via GET call to defined url
-  Parameters:
-  @height - int, height of desired picture
-  @width - int, width of desired picture
-  */
-
-  getRandomProductPicture(h, w) {
-    let height = h.toString();
-    let width = w.toString();
-
-    let randUrl = "https://picsum.photos/" + height + "/" + width + "/?random";
-    let imageUrl;
-    let req = unirest("GET", randUrl);
-    req.query({
-      random: ""
-    });
-
-    req.headers({
-      "Cache-Control": "no-cache"
-    });
-
-    req.end(function(res) {
-      if (res.error) throw new Error(res.error);
-      imageUrl = res.body;
-      console.log(res.body);
-    });
-
-    return imageUrl;
   }
 };
