@@ -26,6 +26,7 @@ class ProductCardMainPage extends Component {
             {product.price} {product.currency}{" "}
           </h3>
           <Button color="facebook">Add to cart</Button>
+          <Button color="facebook" icon="heart outline"/>
         </Card.Content>
       </Card>
     );
